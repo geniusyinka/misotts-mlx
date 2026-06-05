@@ -23,3 +23,6 @@ refs/*.wav
 # misc
 .env
 *.log
+
+# docs kept local, not published here
+docs/
