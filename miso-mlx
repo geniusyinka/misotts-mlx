@@ -5,4 +5,4 @@ set -e
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PY="$DIR/.venv/bin/python"
 [ -x "$PY" ] || PY="$(command -v python3)"
-exec "$PY" "$DIR/miso_cli.py" "$@"
+exec "$PY" "$DIR/src/miso_cli.py" "$@"
