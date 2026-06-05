@@ -1,0 +1,24 @@
+misotts-mlx — an Apple Silicon (MLX) port of MisoTTS
+=====================================================
+
+MisoTTS is created by Miso Labs (Kamino Learning, Inc.).
+  Upstream code:    https://github.com/MisoLabsAI/MisoTTS
+  Model weights:    https://huggingface.co/MisoLabs/MisoTTS
+  Upstream license: Modified MIT License (see LICENSE)
+
+This repository ports MisoTTS to run locally on Apple Silicon via Apple's MLX
+framework. It is not affiliated with or endorsed by Miso Labs.
+
+Vendored upstream files (unmodified or lightly adapted; remain under the
+upstream Modified MIT License):
+  generator.py, models.py, moshi_compat.py, watermarking.py,
+  run_misotts.py, run_misotts_mac.py
+
+Original work in this repository (MLX port, validation harnesses, tooling),
+released under the same Modified MIT License:
+  misotts_mlx.py, run_misotts_mlx.py, miso_cli.py, miso-mlx, mlx_fast_decoder.py,
+  capture_frame0_mlx.py, compare_frame0.py, capture_trace.py, compare_trace_mlx.py,
+  clone_experiment_cuda.py, clone_experiment_mlx.py, score_identity.py
+
+The "Miso Labs" attribution clause in LICENSE (for products exceeding 50M MAU or
+$10M/month revenue) applies to this derivative work as well.
