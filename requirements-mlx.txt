@@ -1,0 +1,7 @@
+# Apple Silicon (MLX) extra dependencies — install alongside the base requirements.
+# Tested on macOS arm64 (M4 Pro), Python 3.10, mlx 0.31.2.
+mlx==0.31.2
+mlx-lm==0.31.3
+mlx-audio==0.4.3
+# moshi_mlx is NOT required (its Mimi codec pins old mlx); mlx-audio's Mimi is used instead.
+questionary>=2.0   # interactive terminal wizard (miso-mlx)

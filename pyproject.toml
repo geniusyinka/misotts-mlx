@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "miso-tts"
+version = "0.1.0"
+description = "Miso TTS 8B inference code."
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = { file = "LICENSE" }
+dependencies = [
+    "torch==2.4.0",
+    "torchaudio==2.4.0",
+    "tokenizers==0.21.0",
+    "transformers==4.49.0",
+    "huggingface_hub==0.28.1",
+    "moshi==0.2.2",
+    "bitsandbytes==0.45.5; sys_platform == 'linux'",
+    "torchtune==0.4.0",
+    "torchao==0.9.0",
+    "silentcipher @ git+https://github.com/SesameAILabs/silentcipher@d46d7d0893a583d8968ab3a6626e2289faec9152",
+]
+
+[tool.setuptools]
+py-modules = ["generator", "models", "moshi_compat", "run_misotts", "watermarking"]
