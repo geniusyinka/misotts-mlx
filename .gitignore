@@ -1,0 +1,25 @@
+# venv / python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# os
+.DS_Store
+
+# generated audio / traces / weights (regenerate locally)
+*.wav
+*.flac
+*.npy
+*.npz
+*.safetensors
+out/
+outputs/
+ref_trace/
+ref_trace_mlx/
+refs/*.wav
+
+# misc
+.env
+*.log
